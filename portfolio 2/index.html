@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhya Senthilkumar | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --p: #6366f1; --s: #a855f7; --bg: #030712; --card: #111827; --text: #f8fafc; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { background: var(--bg); color: var(--text); overflow-x: hidden; scroll-behavior: smooth; }
+        
+        /* Premium Background Animation */
+        body::before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 50% 50%, #1e1b4b 0%, #030712 100%); z-index: -1; }
+
+        nav { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 800px; background: rgba(17, 24, 39, 0.8); backdrop-filter: blur(12px); border-radius: 50px; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; border: 1px solid rgba(255, 255, 255, 0.1); }
+        .logo { font-weight: 800; font-size: 1.2rem; background: linear-gradient(to right, var(--p), var(--s)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { text-decoration: none; color: #94a3b8; font-weight: 600; font-size: 0.85rem; transition: 0.3s; }
+
+        header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 10%; }
+        .badge { background: rgba(99, 102, 241, 0.1); color: var(--p); padding: 8px 20px; border-radius: 50px; font-size: 0.8rem; font-weight: 800; border: 1px solid var(--p); margin-bottom: 25px; }
+        h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+        .grad-text { background: linear-gradient(90deg, var(--p), var(--s)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        section { padding: 100px 10%; max-width: 1200px; margin: 0 auto; }
+        .card { background: var(--card); padding: 40px; border-radius: 30px; border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.4s; }
+        .card:hover { transform: translateY(-10px); border-color: var(--p); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .btn { background: linear-gradient(45deg, var(--p), var(--s)); color: white; padding: 15px 40px; border-radius: 12px; text-decoration: none; font-weight: 700; transition: 0.3s; display: inline-block; border: none; cursor: pointer; }
+        
+        input, textarea { width: 100%; padding: 15px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: white; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SANTHYA.S</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="badge">Computer Science Undergraduate</div>
+        <h1>I Build <span class="grad-text">Intelligent</span> Solutions</h1>
+        <p style="color: #94a3b8; max-width: 650px; margin-bottom: 35px;">Motivated CS student at Knowledge Institute of Technology with a 7.6 CGPA. Specialized in UI/UX and AI-based healthcare systems.</p>
+        <a href="#contact" class="btn">Let's Connect</a>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>I am a quick learner with a native command of Tamil, fluent English, and Japanese (JLPT N5 level). Certified in Industry 4.0, IoT, and Software Testing.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Work</h2>
+        <div class="grid">
+            <div class="card">
+                <small style="color: var(--p); font-weight: 800;">AI HEALTHCARE</small>
+                <h3 style="margin: 10px 0;">Genetic Predisposition System</h3>
+                <p>AI system using ECG/EEG for early detection of genetic disorders.</p>
+            </div>
+            <div class="card">
+                <small style="color: var(--s); font-weight: 800;">MOBILE DEVELOPMENT</small>
+                <h3 style="margin: 10px 0;">Alumni Connect App</h3>
+                <p>Scalable platform for engagement, mentorship, and job boards.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="card" style="max-width: 600px; margin: 0 auto;">
+            <h2 style="margin-bottom: 20px;">Contact Me</h2>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl5XZ_Vn_llMp6WhJZJFG6n947n3bSitwXOByisX-Ims9Ptw/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                <input type="text" name="entry.138547466" placeholder="Name" required>
+                <input type="email" name="entry.170617307" placeholder="Email" required>
+                <textarea name="entry.13501067
